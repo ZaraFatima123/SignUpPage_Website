@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovative Tech Enthusiasts!</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.4.0/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <h1>Welcome to Innovative Tech Enthusiasts</h1>
+    <h3>Let's shape the future together!</h3>
+    <div class="container">
+        <h2>Register</h2>
+        <div class="form-container">
+            <form id="registration-form" action="connect2.php" method="post">
+
+                <div class="input-name">
+                    <i class="fa fa-user lock"></i>
+                    <input type="text" id="first-name" placeholder="First Name" class="name" name="first-name" required>
+                    <span>
+                        <i class="fa fa-user lock"></i>
+                        <input type="text" id="last-name" placeholder="Last Name" class="name" name="last-name" required>
+                    </span>
+                </div>
+
+                <div class="input-name">
+                    <i class="fa fa-envelope email"></i>
+                    <input type="email" id="email" placeholder="Email" class="text-name" name="email" required>
+                </div>
+
+                <div class="input-name">
+                    <i class="fa fa-lock lock"></i>
+                    <input type="password" id="password" placeholder="Password" class="text-name" name="password" required>
+                </div>
+
+                <div class="input-name">
+                    <i class="fa fa-lock lock"></i>
+                    <input type="password" id="retype-password" placeholder="Retype Password" class="text-name" required>
+                </div>
+
+                <div class="input-name">
+                    <input type="radio" class="radio-button" name="gender" id="male" value="Male"  required>
+                    <label for="male" style="margin-right: 30px;">Male</label>
+                    <input type="radio" class="radio-button" name="gender" id="female" value="Female" required>  
+                    <label for="female" style="margin-right: 30px;">Female</label>
+                </div>
+
+                <div class="input-name">
+                    <select class="country" name="country" required>
+                        <option value="">Select your country</option>
+                        <option value="India">India</option>
+                        <option value="Australia">Australia</option>
+                        <option value="United States of America">United States of America</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="Bhutan">Bhutan</option>
+                        <option value="Russia">Russia</option>
+                    </select>
+                    <div class="arrow"></div>
+                </div>
+
+               
+
+                <div class="input-name">
+                    <input type="checkbox" id="terms" class="check-button" required>
+                    <label for="terms" class="check">I accept the terms and conditions</label>
+                </div>
+
+                <div class="input-name">
+                    <input type="submit" value="Submit and Continue" class="button">
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+
+    <!-- // Handle form submission and redirect to OTP page -->
+    <script>
+         document.addEventListener("DOMContentLoaded", function() {
+             // Handle form submission and redirect to OTP page
+             document.getElementById("registration-form").addEventListener("submit", function(event) {
+                 event.preventDefault();  // Prevent default form submission
+                 // Perform validation or any other tasks here if needed
+                 window.location.href = "otp.html";  // Redirect to otp.html
+             });
+         });
+    </script>
+</body>
+</html>
+
+<script src="otp_newest.js"></script> <!-- Correct placement of your JavaScript file -->
+</body>
+</html> 

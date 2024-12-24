@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #ffffff;
+
+    font-size: 14px;
+}
+
+.form{
+    width: 500px;
+    border: solid black;
+    background-color:#fefe1d;
+    padding: 0 30px;
+    display: grid;
+    gap: 20px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+
+}
+
+.otp_verify{
+   width: 100%;
+   display: flex;
+   gap: 20px;
+}
+
+.btn{
+    padding: 10px;
+    background-color: #82eec1;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.otp_verify{
+    display: inline-block;
+    
+} 
+/* i want the verify button to cme first in next line i, send otp then verify otp */
+
